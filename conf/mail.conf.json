@@ -1,0 +1,16 @@
+{
+  "redis": {
+    "is_able": "false",
+    "ip": "192.168.7.216",
+    "port": "6379",
+    "password": "longrise",
+    "db": "1"
+  },
+  "mail_server": {
+    "sender_mail_name": "运维平台",
+    "sender_mail_password": "20170203",
+    "name": "smtp.longrise.com.cn",
+    "account": "devops@longrise.com.cn",
+    "port": "25"
+  }
+}

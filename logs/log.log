@@ -1,0 +1,14 @@
+[    INFO]-[2017-07-14 14:59:14,123]-Init.py :Line:13 : conf file init 
+[    INFO]-[2017-07-14 14:59:14,124]-Init.py :Line:15 : conf init into memory , starting...
+[   DEBUG]-[2017-07-14 14:59:14,124]-Conf_func.py :Line:28 : init conf_json info is : {'server': {'context': 'OTHER', 'port': 8003}, 'mail': {'mail_server': {'sender_mail_password': '20170203', 'sender_mail_name': '运维平台', 'name': 'smtp.longrise.com.cn', 'port': '25', 'account': 'devops@longrise.com.cn'}, 'redis': {'db': '1', 'is_able': 'false', 'port': '6379', 'ip': '192.168.7.216', 'password': 'longrise'}}}
+[    INFO]-[2017-07-14 14:59:56,481]-Init.py :Line:13 : conf file init 
+[    INFO]-[2017-07-14 14:59:56,481]-Init.py :Line:15 : conf init into memory , starting...
+[   DEBUG]-[2017-07-14 14:59:56,482]-Conf_func.py :Line:28 : init conf_json info is : {'mail': {'mail_server': {'sender_mail_name': '运维平台', 'name': 'smtp.longrise.com.cn', 'port': '25', 'account': 'devops@longrise.com.cn', 'sender_mail_password': '20170203'}, 'redis': {'is_able': 'false', 'db': '1', 'password': 'longrise', 'port': '6379', 'ip': '192.168.7.216'}}, 'server': {'context': 'OTHER', 'port': 8003}}
+[    INFO]-[2017-07-14 15:01:46,417]-Init.py :Line:13 : conf file init 
+[    INFO]-[2017-07-14 15:01:46,417]-Init.py :Line:15 : conf init into memory , starting...
+[   DEBUG]-[2017-07-14 15:01:46,418]-Conf_func.py :Line:28 : init conf_json info is : {'server': {'context': 'OTHER', 'port': 8003}, 'mail': {'mail_server': {'sender_mail_name': '运维平台', 'account': 'devops@longrise.com.cn', 'sender_mail_password': '20170203', 'port': '25', 'name': 'smtp.longrise.com.cn'}, 'redis': {'ip': '192.168.7.216', 'password': 'longrise', 'is_able': 'false', 'port': '6379', 'db': '1'}}}
+[    INFO]-[2017-07-14 15:01:46,421]-start.py :Line:35 : serer started , port is 8003 , context is OTHER 
+[    INFO]-[2017-07-14 15:02:01,909]-Init.py :Line:13 : conf file init 
+[    INFO]-[2017-07-14 15:02:01,909]-Init.py :Line:15 : conf init into memory , starting...
+[   DEBUG]-[2017-07-14 15:02:01,910]-Conf_func.py :Line:28 : init conf_json info is : {'mail': {'mail_server': {'account': 'devops@longrise.com.cn', 'sender_mail_name': '运维平台', 'name': 'smtp.longrise.com.cn', 'sender_mail_password': '20170203', 'port': '25'}, 'redis': {'db': '1', 'port': '6379', 'is_able': 'false', 'ip': '192.168.7.216', 'password': 'longrise'}}, 'server': {'port': 8003, 'context': 'OTHER'}}
+[    INFO]-[2017-07-14 15:02:01,914]-start.py :Line:35 : serer started , port is : 8003 , context is : OTHER 
