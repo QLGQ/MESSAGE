@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # !-*- coding:utf-8 -*-
 import sys
-
+#add zhushi
 sys.path.append(sys.path[0].replace("/bin", ""))  # 初始化项目路径
 
 import tornado
