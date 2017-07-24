@@ -1,0 +1,7 @@
+{
+  "isable":true,
+  "ip":"192.168.7.216",
+  "port":6379,
+  "user":"longrise",
+  "password":"longrise"
+}

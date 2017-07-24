@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # !-*- coding:utf-8 -*-
 import sys
-
+#add zhushi
 sys.path.append(sys.path[0].replace("/bin", ""))  # 初始化项目路径
 
 import tornado
@@ -12,6 +12,7 @@ from bin.init import Init
 from bin.until import Path
 from bin.until import Logger
 from bin import init
+
 
 P = Path.getInstance()
 L =Logger.getInstance()
