@@ -15,7 +15,24 @@ class Service_logic(object):
     def sendMail(self, data):
         return Mail_func.getInstance().send_mail(data)
 
-    def logic(self, data):
+    '''
+        @author:wuqiang,windyStreet
+        @time:2017年8月7日10:14:09
+        @version:V0.1.0
+        @func:""
+        @param:data:{
+            "A":"a",# string 用于判定
+        } json #(able null)
+        @param:xxx:"xxx用于区别发信息的类型"（
+                                1、xxx=1，发邮件;
+                                2、xxx=2，发微信;
+                                3、xxx=5，发邮件和短信
+                                ）
+                                string （# not null）
+        @notice:""
+        @return:PR
+    '''
+    def logic(self, data,xxx="xxx"):
         _PR = PR.getInstance()
         _data = {
             "title": {
