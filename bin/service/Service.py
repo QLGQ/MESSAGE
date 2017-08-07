@@ -3,11 +3,10 @@
 
 import tornado.web
 
-from bin.service import  Outer_services
+from bin.service import Outer_services
 from bin.logic.Service_Mail import *
 from bin.until import Logger
 from bin.until import PR
-from bin import until
 import json
 
 L = Logger.getInstance()
@@ -23,7 +22,7 @@ class Service(tornado.web.RequestHandler):
         try:
             method = self.get_argument('method', '__error__')
             if method == "__error__":
-                _PR.setCode(until.Code_METHODERROR)
+                _PR.setCode(PR.Code_METHODERROR)
                 _PR.setMsg("method ERROR , not give the method or get the method is __error__")
                 return self.write(_PR.getPRBytes())
             data = json.loads(self.get_argument('data', None))
@@ -31,7 +30,7 @@ class Service(tornado.web.RequestHandler):
             L.debug("the service request parameter : " + str(data))
             self.write(operator.get(method)(data))
         except Exception as e:
-            _PR.setCode(until.Code_EXCEPTION)
+            _PR.setCode(PR.Code_EXCEPTION)
             _PR.setMsg("exception ERROR :" + str(e))
             self.write(_PR.getPRBytes())
 
