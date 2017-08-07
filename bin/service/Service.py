@@ -2,7 +2,8 @@
 # !-*- coding:utf-8 -*-
 
 import tornado.web
-from bin.logic.Service_logic import *
+
+from bin.service import  Outer_services
 from bin.logic.Service_Mail import *
 from bin.until import Logger
 from bin.until import PR
@@ -12,9 +13,7 @@ import json
 L = Logger.getInstance()
 operator = \
     {
-        "sendMail": Service_logic().sendMail,
-        "xx": Service_logic().xx,
-        "line_test": Service_logic().line_test
+        "sendMail": Outer_services().send_msg
     }
 
 

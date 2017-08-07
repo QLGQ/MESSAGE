@@ -4,8 +4,8 @@ import json
 
 import requests
 
-
-class WeChat(object):
+MSG_CODE_TYPE=2
+class We_chat_func(object):
     def __init__(self):
         self.appID = "wx0412ca50b0a56b5b"
         self.appsecret = "0991bc9f8ea275f156b7058e679c1af0"
@@ -35,7 +35,7 @@ class WeChat(object):
         }, ensure_ascii=True)
         return data
 
-    def send_msg(self, read_msg):
+    def send_we_chat(self, read_msg):
         if read_msg is None:
             print("not message to send")
         else:
@@ -56,17 +56,17 @@ class WeChat(object):
 
 
 def getInstance():
-    return WeChat()
+    return We_chat_func()
 
 
 def main():
-    wc = WeChat()
+    wc = We_chat_func()
     wc.get_access_token()
     while True:
         read_msg = input("输入break退出消息发送:")
         if read_msg == "break":
             break
-        wc.send_msg(read_msg)
+        wc.send_we_chat(read_msg)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # !-*- coding:utf-8 -*-
+import math
+
 
 class Data(object):
     def __init__(self):
@@ -20,3 +22,11 @@ def isNone(data):
             return True
     except Exception as e:
         return False
+
+def get_bin_add_Datas(dec):
+    y = 0
+    list_x = []
+    for x in bin(int(dec)).split("b")[1][::-1]:
+        if x != "0":
+            list_x.append(int(math.pow(2,y)))
+        y = y + 1
